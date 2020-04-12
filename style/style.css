@@ -1,0 +1,13 @@
+body {
+	background-image: url('./resources/unsplash-mountain.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.content {
+	margin-top: 70px;
+}
+
+.initial {
+	margin-top: 1rem;
+}
