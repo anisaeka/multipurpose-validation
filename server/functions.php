@@ -9,10 +9,10 @@ function register(){
         $username = $_POST['username'];
         $password = $_POST['password'];
         $confirmPassword = $_POST['confirmPassword'];
-        $query = "INSERT INTO users (username,password,email) VALUES ('$username', '$password', '$email' )";
         
         if($password === $confirmPassword && (strlen($username) >= 5 && strlen($password) >= 5)){
             $password = crypt($password, "lexicalscorn");
+            $query = "INSERT INTO users (username,password,email) VALUES ('$username', '$password', '$email' )";
             mysqli_query($connect, $query);
         } else {
             echo '<div class="alert alert-danger" role="alert">
