@@ -1,11 +1,14 @@
-<?php include 'components/header.php' ?>
+<?php include 'components/header.php';
+      include 'server/functions.php';
+      register();
+?>
 
 <div class="content">
     <div class="container text-light">
         <div class="row d-flex justify-content-center ">
             <div class="col-md-6 border rounded border-light">
                 <h5 class="text-center initial">Register</h5>
-                <form>
+                <form action="register.php" method="post">
                     <div class="form-group">
                         <label for="email">Email address</label>
                         <input type="email" name="email" class="form-control" id="email">
